@@ -32,8 +32,8 @@ def every_netflix_movie_ever(starting_number)
   agent = Mechanize.new
   netflix = agent.get('http://movies.netflix.com/WiHome')
   login_form = netflix.forms.first
-  login_form.email = 'joshuacherkes@gmail.com'
-  login_form.password = 'ec0n0mics'
+  login_form.email = 'EMAIL_ADDRESS_HERE'
+  login_form.password = 'PASSWORD_HERE'
   agent.submit(login_form)
   n = starting_number
 
@@ -139,8 +139,8 @@ end
 #   agent = Mechanize.new
 #   netflix = agent.get('http://movies.netflix.com/WiHome')
 #   login_form = netflix.forms.first
-#   login_form.email = 'joshuacherkes@gmail.com'
-#   login_form.password = 'ec0n0mics'
+#   login_form.email = 'EMAIL_ADDRESS_HERE'
+#   login_form.password = 'PASSWORD_HERE'
 #   agent.submit(login_form)
 #   alt_genre = n.to_s
 #   alt_genre_page = agent.get("http://movies.netflix.com/WiAltGenre?agid=#{alt_genre}&pn=1&np=1")
@@ -209,8 +209,8 @@ end
 #   agent = Mechanize.new
 #   netflix = agent.get('http://movies.netflix.com/WiHome')
 #   login_form = netflix.forms.first
-#   login_form.email = 'joshuacherkes@gmail.com'
-#   login_form.password = 'ec0n0mics'
+#   login_form.email = 'EMAIL_ADDRESS_HERE'
+#   login_form.password = 'PASSWORD_HERE'
 #   agent.submit(login_form)
 
 
